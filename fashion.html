@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fashion • WorldEyeopener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-dark">
+  <header class="we-header">
+    <div class="we-logo">
+      <a href="index.html">WORLD<span>EYEOPENER</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="we-nav">
+      <a href="music.html">Music</a>
+      <a href="zen.html">Zen</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="brainoverboard.html">BrainOverBoard</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Fashion</h1>
+      <p>WorldEyeopener pieces built for dancers, dreamers, coders, and creators.</p>
+    </section>
+
+    <section class="page-content">
+      <div class="column-grid three">
+        <!-- Product 1 -->
+        <article class="card">
+          <h3>WorldEyeopener Tee</h3>
+          <p>Soft, everyday tee with a subtle futuristic logo hit.</p>
+          <!-- Replace with real image + link -->
+          <a href="#" class="btn primary-sm">Shop Now</a>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="card">
+          <h3>BrainOverBoard Hoodie</h3>
+          <p>Cozy hoodie for late-night chess marathons and vibe-coding sessions.</p>
+          <a href="#" class="btn primary-sm">Shop Now</a>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="card">
+          <h3>Zen Crystal Crewneck</h3>
+          <p>Minimal crewneck inspired by breathwork, grounding, and focus.</p>
+          <a href="#" class="btn primary-sm">Shop Now</a>
+        </article>
+      </div>
+
+      <p style="margin-top:1.5rem; color:var(--muted); font-size:0.9rem;">
+        All purchases support new music, video, and tools from the WorldEyeopener universe.
+      </p>
+    </section>
+  </main>
+
+  <footer class="we-footer">
+    <!-- same footer -->
+    <div class="footer-main">
+      <div>
+        <h4>WorldEyeopener</h4>
+        <p>Thee official hub for Saint’s AI-powered universe.</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:eyeopenworlds0@gmail.com">eyeopenworlds0@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brands</h4>
+        <ul>
+          <li><a href="https://your-wemir-link-here.com" target="_blank">WEMIR-Webs</a></li>
+          <li><a href="https://your-aurapro-link-here.com" target="_blank">AURAPRO AI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> WorldEyeopener. All rights reserved.</p>
+      <p><a href="terms.html">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.we-nav');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('nav-open');
+      });
+    }
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
