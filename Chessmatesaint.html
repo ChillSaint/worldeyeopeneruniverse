@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chess Channels • WorldEyeopener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <span>WorldEyeopener</span>
+        <span>Brain Over Board • Chess</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="chess.html">Chess</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page">
+      <h1 class="page-title">Chess Channels</h1>
+      <p class="page-subtitle">
+        Live chess, vibe coding, and strategy breakdowns – all in one place. Watch
+        episodes here or tap out to YouTube.
+      </p>
+
+      <div class="card" style="margin-bottom: 1.5rem;">
+        <div class="card-tag">Main Channel</div>
+        <div class="card-title">WorldEyeopener Chess / Brain Over Board</div>
+        <p>
+          Long-term goal: turn your chess journey into a series – mindset, tactics,
+          coding, and life lessons from the board.
+        </p>
+        <div class="card-actions">
+          <!-- Replace with your actual YouTube channel URL -->
+          <a class="btn" href="#" target="_blank" rel="noopener">Visit YouTube Channel</a>
+        </div>
+      </div>
+
+      <div class="video-grid">
+        <div>
+          <div class="card-tag">Episode 01</div>
+          <div class="card-title">Chess + Vibe Coding</div>
+          <div class="video-embed">
+            <!-- Replace VIDEO_ID with your real YouTube video ID -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Chess + Vibe Coding" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div>
+          <div class="card-tag">Episode 02</div>
+          <div class="card-title">Tactics & Time Management</div>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Chess Tactics" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-muted" style="margin-top: 1.25rem;">
+        To add more videos, just copy one of the blocks above and paste in new YouTube
+        video IDs from your channel.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      © <span id="year"></span> WorldEyeopener. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
