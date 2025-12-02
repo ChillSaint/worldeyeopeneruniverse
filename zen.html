@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zen • WorldEyeopener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-dark">
+  <header class="we-header">
+    <div class="we-logo">
+      <a href="index.html">WORLD<span>EYEOPENER</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="we-nav">
+      <a href="music.html">Music</a>
+      <a href="zen.html">Zen</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="brainoverboard.html">BrainOverBoard</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Zen</h1>
+      <p>Guided breathwork & meditation to reset your mind, body, and nervous system.</p>
+    </section>
+
+    <section class="page-content">
+      <article class="card">
+        <h3>WorldEyeopener Breath Session</h3>
+        <p>
+          This session walks you through simple breathing patterns, grounding, and mental stillness
+          so you can move through the day with clarity instead of chaos.
+        </p>
+
+        <!-- If self-hosted video -->
+        <div class="embed-frame">
+          <!-- Replace src with your own video URL or YouTube unlisted video -->
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
+        </div>
+
+        <p style="margin-top:1rem;">
+          When you purchase the Zen video, you receive lifetime access plus any future
+          updated versions of this session.
+        </p>
+
+        <!-- Replace # with your product checkout link (Gumroad, Payhip, Stripe Checkout, etc.) -->
+        <a href="#" class="btn primary" style="margin-top:1rem;">Buy the Zen Session</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="we-footer">
+    <!-- same footer -->
+    <div class="footer-main">
+      <div>
+        <h4>WorldEyeopener</h4>
+        <p>Thee official hub for Saint’s AI-powered universe.</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:eyeopenworlds0@gmail.com">eyeopenworlds0@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brands</h4>
+        <ul>
+          <li><a href="https://your-wemir-link-here.com" target="_blank">WEMIR-Webs</a></li>
+          <li><a href="https://your-aurapro-link-here.com" target="_blank">AURAPRO AI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> WorldEyeopener. All rights reserved.</p>
+      <p><a href="terms.html">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.we-nav');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('nav-open');
+      });
+    }
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
