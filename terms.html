@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Terms of Use • WorldEyeopener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-dark">
+  <header class="we-header">
+    <div class="we-logo">
+      <a href="index.html">WORLD<span>EYEOPENER</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="we-nav">
+      <a href="music.html">Music</a>
+      <a href="zen.html">Zen</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="brainoverboard.html">BrainOverBoard</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Terms of Use</h1>
+      <p>These Terms govern how you access and use Thee Official WorldEyeopener site.</p>
+    </section>
+
+    <section class="page-content">
+      <div class="terms-block">
+        <h2>1. Overview</h2>
+        <p>
+          By using this site, you agree to these Terms of Use. If you do not agree,
+          please do not use the site or purchase any products from it.
+        </p>
+      </div>
+
+      <div class="terms-block">
+        <h2>2. Intellectual Property</h2>
+        <p>
+          All content on this site—including music, videos, artwork, text, logos, and
+          clothing designs—is owned by WorldEyeopener or its collaborators unless stated otherwise.
+          You may not copy, repost, or resell this content without written permission.
+        </p>
+      </div>
+
+      <div class="terms-block">
+        <h2>3. Purchases & Digital Products</h2>
+        <ul>
+          <li>All sales of digital goods (music, videos, Zen sessions) are generally final.</li>
+          <li>Access instructions will be sent to the email provided at checkout.</li>
+          <li>Do not share paid download links publicly.</li>
+        </ul>
+      </div>
+
+      <div class="terms-block">
+        <h2>4. No Medical or Financial Advice</h2>
+        <p>
+          Zen and meditation content is for educational and wellness purposes only.
+          It is not medical advice, therapy, or professional treatment. Always consult a qualified
+          professional for health questions.
+        </p>
+      </div>
+
+      <div class="terms-block">
+        <h2>5. Changes</h2>
+        <p>
+          Terms may be updated from time to time. Continued use of this site after changes
+          means you accept the updated version.
+        </p>
+      </div>
+
+      <div class="terms-block">
+        <h2>6. Contact</h2>
+        <p>
+          For questions about these Terms, email
+          <a href="mailto:eyeopenworlds0@gmail.com">eyeopenworlds0@gmail.com</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="we-footer">
+    <div class="footer-main">
+      <div>
+        <h4>WorldEyeopener</h4>
+        <p>Thee official hub for Saint’s AI-powered universe.</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:eyeopenworlds0@gmail.com">eyeopenworlds0@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brands</h4>
+        <ul>
+          <li><a href="https://your-wemir-link-here.com" target="_blank">WEMIR-Webs</a></li>
+          <li><a href="https://your-aurapro-link-here.com" target="_blank">AURAPRO AI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> WorldEyeopener. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.we-nav');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('nav-open');
+      });
+    }
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
